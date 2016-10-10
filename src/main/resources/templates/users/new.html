@@ -1,0 +1,31 @@
+<html layout:decorator="layout">
+    <div layout:fragment="content">
+        <form method="post" name="comment_form" id="comment_form" action="/users/create" role="form">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><textarea rows="1" name="firstName"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><textarea rows="1" name="lastName"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><textarea rows="1" name="dob"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><textarea rows="1" name="phoneNumber"></textarea></td>
+                </tr>
+                <tr>
+                    <td>E - mail</td>
+                    <td><textarea rows="1" name="email"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</html>

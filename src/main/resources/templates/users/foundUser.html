@@ -1,0 +1,26 @@
+<html layout:decorator="layout">
+    <div layout:fragment="content">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><textarea rows="1" name="firstName" th:text="${user.firstName}" readonly="readonly"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><textarea rows="1" name="lastName" th:text="${user.lastName}" readonly="readonly"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><textarea rows="1" name="dob" th:text="${user.dob}" readonly="readonly"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><textarea rows="1" name="phoneNumber" th:text="${user.phoneNumber}" readonly="readonly"></textarea></td>
+                </tr>
+                <tr>
+                    <td>E - mail</td>
+                    <td><textarea rows="1" name="email" th:text="${user.email}" readonly="readonly"></textarea></td>
+                </tr>
+            </table>
+    </div>
+</html>

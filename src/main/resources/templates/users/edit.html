@@ -1,0 +1,32 @@
+<html layout:decorator="layout">
+    <div layout:fragment="content">
+        <form method="post" name="comment_form" id="comment_form" action="/users/update" role="form">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><textarea rows="1" name="firstName" th:text="${user.firstName}"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><textarea rows="1" name="lastName" th:text="${user.lastName}"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><textarea rows="1" name="dob" th:text="${user.dob}"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><textarea rows="1" name="phoneNumber" th:text="${user.phoneNumber}"></textarea></td>
+                </tr>
+                <tr>
+                    <td>E - mail</td>
+                    <td><textarea rows="1" name="email" th:text="${user.email}"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="submit">Submit</button></td>
+                </tr>
+            </table>
+            <input type="hidden" id="user_id" name="user_id" th:value="${user.id}"/>
+        </form>
+    </div>
+</html>
